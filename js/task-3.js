@@ -1,17 +1,13 @@
-'use strict';
+"use strict";
 
 function filterArray(numbers, value) {
-    const matches = [];
-    for (let i = 0; i <= numbers.length; i++) {
-
-        if (numbers[i] > value) {
-    
-            matches.push(numbers[i]);
-        
-        }
-
+  const matches = [];
+  for (let i = 0; i <= numbers.length; i++) {
+    if (numbers[i] > value) {
+      matches.push(numbers[i]);
     }
-    return matches;
+  }
+  return matches;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
